@@ -4,6 +4,7 @@ import time
 import numpy as np
 import Temp_Upload
 import Temp_Write
+#import Temp_Device
 
 os.system('modprobe w1-gpio')  # import gpio
 os.system('modprobe w1-therm')  # import sensor
@@ -49,6 +50,7 @@ while True:  # This loop read value from all available sensor
         temp[i] = read_temp(i)
         print('Device Number:%s Temp:%0.2f Celcius' % (device_num[i], temp[i]))
     print('')
+    #temp = Temp_Device.sort(temp)
     Temp_Upload.upload(temp)  # Upload Temperature
     # save temperature value to csv file
     Temp_Write.write_temp(device_num, temp)
