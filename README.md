@@ -1,5 +1,5 @@
 # Smart Fermentation Tank
-Temp Data Logging with Thingspeak Api (planning to add ph probe)
+Temp Data Logging with Thingspeak API (planning to add ph probe)
 
 # Prerequisite
 Python 3.8
