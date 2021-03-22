@@ -1,1 +1,1 @@
-key = '' #API Key for Thing Speak
+key = ''  # API Key for Thing Speak
